@@ -1,2 +1,1 @@
-# Emycs
-lisp backup
+分享emacs配置
