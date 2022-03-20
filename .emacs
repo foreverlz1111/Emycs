@@ -103,3 +103,6 @@
 
     ;; 默认开启全屏
     ;;(setq initial-frame-alist (quote ((fullscreen . maximized))))
+
+    ;;多行注释
+    ;;选中，C + x， C + ;
