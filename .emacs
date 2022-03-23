@@ -11,7 +11,7 @@
    ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
  '(global-auto-complete-mode t)
  '(package-selected-packages
-   '(treemacs multi-line go-fill-struct go-gen-test go-guru go-impl go-rename go-tag godoctor lsp-mode company-go lsp-ui company projectile use-package dashboard vue-mode ## lsp-dart go-mode markdown-mode))
+   '(markdown-preview-mode treemacs multi-line go-fill-struct go-gen-test go-guru go-impl go-rename go-tag godoctor lsp-mode company-go lsp-ui company projectile use-package dashboard vue-mode ## lsp-dart go-mode markdown-mode))
  '(speedbar-show-unknown-files t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -106,3 +106,7 @@
 
     ;;多行注释
     ;;选中，C + x， C + ;
+
+    ;;markdown 事实预览
+    (setq markdown-preview-stylesheets (list "http://thomasf.github.io/solarized-css/solarized-light.min.css"))
+
