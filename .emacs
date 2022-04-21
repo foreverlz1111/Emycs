@@ -11,7 +11,7 @@
    ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
  '(global-auto-complete-mode t)
  '(package-selected-packages
-   '(markdown-preview-mode treemacs multi-line go-fill-struct go-gen-test go-guru go-impl go-rename go-tag godoctor lsp-mode company-go lsp-ui company projectile use-package dashboard vue-mode ## lsp-dart go-mode markdown-mode))
+   '(python-mode impatient-mode markdown-preview-mode treemacs multi-line go-fill-struct go-gen-test go-guru go-impl go-rename go-tag godoctor lsp-mode company-go lsp-ui company projectile use-package dashboard vue-mode ## lsp-dart go-mode markdown-mode))
  '(speedbar-show-unknown-files t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -38,7 +38,7 @@
     ;;(setq dashboard-set-init-info t)
     (setq dashboard-init-info "")
     (setq dashboard-banner-logo-title nil)
-    (setq dashboard-items '((recents  . 5)
+    (setq dashboard-items '((recents  . 15)
                         (bookmarks . 10)
                     ;;项目已取消(projects . 10)
                         ))
