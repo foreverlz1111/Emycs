@@ -11,7 +11,7 @@
    ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
  '(global-auto-complete-mode t)
  '(package-selected-packages
-   '(python-mode impatient-mode markdown-preview-mode treemacs multi-line go-fill-struct go-gen-test go-guru go-impl go-rename go-tag godoctor lsp-mode company-go lsp-ui company projectile use-package dashboard vue-mode ## lsp-dart go-mode markdown-mode))
+   '(web-mode python-mode impatient-mode markdown-preview-mode treemacs multi-line go-fill-struct go-gen-test go-guru go-impl go-rename go-tag godoctor lsp-mode company-go lsp-ui company projectile use-package dashboard ## lsp-dart go-mode markdown-mode web-mode))
  '(speedbar-show-unknown-files t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -109,4 +109,16 @@
 
     ;;markdown 事实预览
     (setq markdown-preview-stylesheets (list "http://thomasf.github.io/solarized-css/solarized-light.min.css"))
+
+    ;;web-mode
+    (require 'web-mode)
+    (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+    (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+    (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
+    (add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+    (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+    (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+    (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+    (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+    (setq web-mode-markup-indent-offset 2)
 
